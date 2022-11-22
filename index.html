@@ -13,39 +13,124 @@
 ></canvas>
 
 <script>
-    const Rectangle = function (length, width) {
-        this.length = length;
-        this.width = width;
 
-        this.area = function () {
-            return this.length * this.width;
-        };
+    // Ex: Class Date
+    // let MyDate = function(day, month, year) {
+    //
+    //     this.day = day;
+    //
+    //     this.month = month;
+    //
+    //     this.year = year;
+    //
+    //     this.getDay = function() {
+    //         return this.day;
+    //     }
+    //     this.getMonth = function() {
+    //         return this.month;
+    //     }
+    //     this.getYear = function() {
+    //         return this.year;
+    //     }
+    //     this.setDay = function(day) {
+    //         this.day  = day;
+    //     }
+    //     this.setMonth = function(month) {
+    //         this.month  = month;
+    //     }
+    //     this.setYear = function(year) {
+    //         this.year  = year;
+    //     }
+    //
+    // };
+    // let date = new MyDate(2, 2, 2007);
+    //
+    // date.setDay(10);
+    // date.setMonth(10);
+    // date.setYear(2019);
+    //
+    // let day = date.getDay();
+    //
+    // let month = date.getMonth();
+    //
+    // let year = date.getYear();
+    //
+    // alert(day + "/" + month + "/" + year);
+    //
 
-        this.perimeter = function () {
-            return (this.length + this.width) * 2;
-        };
+    // EX: Funny CirCle
+    // function Circle(x, y, radius){
+    //     this.x = x;
+    //     this.y = y;
+    //     this.radius = radius;
+    // }
+    //
+    // function getRandomHex(){
+    //     return Math.floor(Math.random()*255);
+    // }
+    //
+    // function getRandomColor(){
+    //     var red = getRandomHex();
+    //     var green = getRandomHex();
+    //     var blue = getRandomHex();
+    //     return "rgb(" + red + "," + blue + "," + green +")";
+    // }
+    //
+    // function createCircle(){
+    //     var ctx = document.getElementById("myCanvas").getContext("2d");
+    //     var radius = Math.floor(Math.random() * 80);
+    //     var color = getRandomColor();
+    //     var x = Math.random() * window.innerWidth;
+    //     var y = Math.random() * window.innerHeight;
+    //     var circle= new Circle(x, y, radius);
+    //     ctx.beginPath();
+    //     ctx.arc(circle.x, circle.y, circle.radius, 0, 2 * Math.PI);
+    //     ctx.fillStyle = color;
+    //     ctx.fill();
+    // }
+    //
+    // function createMultipleCircle(){
+    //     for(var i = 0; i < 30; i++){
+    //         createCircle();
+    //     }
+    // }
+    //
+    // createMultipleCircle();
 
-        this.getLength  = function(){
-            return this.length =length;
-        }
-
-        this.getWidth = function(){
-            return this.width = width;
-        }
-
-        this.drawRectangle = function () {
-            ctx = document.getElementById("myCanvas").getContext("2d");
-            ctx.moveTo(0, 0);
-            ctx.lineTo(0, width);
-            ctx.lineTo(length, width);
-            ctx.lineTo(length, 0);
-            ctx.lineTo(0, 0);
-            ctx.stroke();
-        };
-    };
-
-    RectangleA = new Rectangle(200, 40);
-    RectangleA.drawRectangle();
+    // EX: Draw Circle
+    // const Rectangle = function (length, width) {
+    //     this.length = length;
+    //     this.width = width;
+    //
+    //     this.area = function () {
+    //         return this.length * this.width;
+    //     };
+    //
+    //     this.perimeter = function () {
+    //         return (this.length + this.width) * 2;
+    //     };
+    //
+    //     this.getLength  = function(){
+    //         return this.length =length;
+    //     }
+    //
+    //     this.getWidth = function(){
+    //         return this.width = width;
+    //     }
+    //
+    //     this.drawRectangle = function () {
+    //         ctx = document.getElementById("myCanvas").getContext("2d");
+    //         ctx.moveTo(0, 0);
+    //         ctx.lineTo(0, width);
+    //         ctx.lineTo(length, width);
+    //         ctx.lineTo(length, 0);
+    //         ctx.lineTo(0, 0);
+    //         ctx.stroke();
+    //     };
+    // };
+    //
+    // RectangleA = new Rectangle(200, 40);
+    // RectangleA.drawRectangle();
 </script>
 </body>
 </html>
